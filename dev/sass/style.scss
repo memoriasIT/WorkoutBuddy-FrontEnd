@@ -1,0 +1,49 @@
+
+/*
+    // ==================== IMPORT ==================== \\
+   ||                                                   ||
+   \\--------------------------------------------------//
+*/
+
+// ================== VENDORS FOLDER ================== \\
+@import "vendors/include-media";
+
+
+// ==================== BASE FOLDER ==================== \\
+@import 'base/colors';
+@import 'base/typography';
+@import 'base/reset';
+
+
+// ================= COMPONENTS FOLDER ================= \\
+@import 'components/animations';
+@import 'components/button';
+@import 'components/input';
+@import 'components/media';
+@import 'components/slider';
+@import 'components/checkbox';
+@import 'components/dropdown';
+
+
+// =================== HELPERS FOLDER =================== \\
+@import 'helpers/placeholders';
+@import 'helpers/mixins';
+@import 'helpers/functions';
+
+
+// =================== PAGES FOLDER =================== \\
+@import 'pages/home';
+
+// =================== LAYOUT FOLDER =================== \\
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'layout/main';
+@import 'layout/main-about';
+@import 'layout/main-home';
+@import 'layout/main-wall';
+@import 'layout/main-actors';
+@import 'layout/main-genre';
+@import 'layout/main-gallery';
+@import 'layout/overlay-movies';
+@import 'layout/overlay-background';

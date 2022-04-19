@@ -1,0 +1,143 @@
+/* ==================== HEADER ==================== */
+
+
+#header {
+    z-index: 3;
+}
+
+#header-container {
+
+    max-width: 87.5rem;
+    width: 100%;
+    height: 9.38rem;
+
+    padding: 0px 3.13rem;
+
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    grid-template-areas: "headerLogo . headerNav headerSearch";
+
+    align-items: center;
+
+    //border-bottom: .13rem solid $c-theme1;
+}
+
+
+// ==================== HEADER CONTENT  ==================== \\
+
+    // ==================== HEADER LOGO  ==================== \\
+
+    #header-logo {
+        grid-area: headerLogo;
+
+        display: grid;
+        grid-template-columns: auto auto;
+
+        align-items: center;
+
+        padding: .63rem 4.38rem .63rem .63rem;
+
+        margin-bottom: 1rem;
+
+        cursor: pointer;
+    }
+
+        #header-logo-image {
+            margin: 0px -0.5rem;
+            height: 5rem;
+        }
+
+        #header-logo-title {
+            @include headerLogoTitle;
+            color: $c-theme1;
+        }
+
+    // ==================== HEADER NAVIGATION  ==================== \\
+
+    #header-navigation {
+        grid-area: headerNav;
+    }
+
+        #header-navigation-ul {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+
+            margin-right: 1.25rem;
+        }
+
+            .header-navigation-elements {
+                height: 9.38rem;
+                display: grid;
+                align-items: center;
+                cursor: pointer;
+
+                @include headerNav;
+                padding: 0px 1.25rem;
+            }
+
+
+    // ==================== HEADER SEARCH  ==================== \\
+
+    #header-search {
+        grid-area: headerSearch;
+
+        display: grid;
+        grid-template-columns: 1fr auto;
+
+        position: relative;
+
+        cursor: pointer;
+    }
+
+
+    #header-search-input {
+        height: 100%;
+        width: 30rem;
+        transition: 0.3s;
+        border: none;
+
+        position: absolute;
+
+        color: $c-w-5;
+        background-color: rgba($c-theme2, 0);
+
+        padding-left: 1.25rem;
+
+        transform: translateX(0) scaleX(0);
+        transform-origin: 0% 50%;
+        @include headerSearch;
+    }
+
+
+	#header-search-input::selection {
+		background-color: $c-theme3;
+	}
+
+    #header-search[data-active="true"] {
+
+        > #header-search-input {
+
+            background-color: $c-theme1;
+            transform: translateX(-25.25rem) scaleX(1);
+        }
+
+        > #header-search-logo {
+            border-left-color: white;
+            color: white;
+        }
+    }
+
+
+
+        #header-search-logo {
+            border-left: 0.2rem solid $c-theme1;
+            padding: 1rem 1.50rem;
+            font-size: 1.50rem;
+            z-index: 2;
+            transition: color 0.3s;
+        }

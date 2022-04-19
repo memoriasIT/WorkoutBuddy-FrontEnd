@@ -1,0 +1,128 @@
+// ==================== MAIN WALL  ==================== \\
+
+
+    // MAIN WALL SEARCH
+
+    #main-wall-search {
+        display: grid;
+        grid-template-columns: 1fr auto auto auto;
+        margin-bottom: 1.25rem;
+        align-items: center;
+    }
+
+        #mws-results {
+            @include mwsResults;
+
+            > span {
+                font-weight: 700;
+            }
+        }
+
+        .spanTag {
+            @include mwsResultsClass;
+            margin: 0px .63rem;
+            background-color: $c-theme6;
+            padding: .5rem .94rem;
+            border-radius: .19rem;
+            box-shadow: 0 .19rem .94rem rgba(0,0,0,0.3);
+
+            > span {
+                @include mwsResultsSpan;
+                margin-left: .63rem;
+            }
+        }
+
+    // MAIN WALL ITEMS
+
+    .main-wall-group {
+        display: none;
+        margin: .94rem 0px;
+        background-color: $c-w-2;
+        padding: 1.25rem 2.5rem;
+        box-shadow: 0 .19rem .94rem rgba(0,0,0,0.3);
+    }
+
+    .mws-h3-header {
+        border-bottom: 1px solid $c-theme4;
+        padding-bottom: .63rem;
+        @include mwsH3Header;
+
+        > span {
+            margin-right: .63rem;
+            color: $c-theme3;
+        }
+    }
+
+    #mws-persons-container, #mws-movies-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .mws-item {
+        display: grid;
+        grid-template-columns: auto 1fr 2fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "posterItem h3Item pItem"
+            "posterItem h5Item pItem";
+
+        border-bottom: 1px solid $c-theme4;
+        padding: .94rem .63rem;
+        cursor: pointer;
+        transition: 0.5s;
+
+        > * {
+            transition: 0.2s;
+            cursor: pointer;
+        }
+    }
+
+    .mws-item:last-child {
+        border: none;
+    }
+
+    .mws-item:hover {
+        border-bottom-color: $c-g-3;
+
+        & > .mws-h3-item {
+            color: $c-theme6;
+            transform: translateX(.63rem);
+        }
+
+        & > .mws-h5-item {
+            transform: translateX(.94rem);
+        }
+    }
+
+        .mws-poster-item {
+            grid-area: posterItem;
+            width: 4.94rem;
+            height: 4.38rem;
+            margin-right: .94rem;
+            background-size: cover;
+        }
+
+        .mws-h3-item {
+            grid-area: h3Item;
+            @include mwsH3Item;
+        }
+
+        .mws-h5-item {
+            grid-area: h5Item;
+            @include mwsH5Item
+
+            > span {
+                padding-left: .13rem;
+                padding-right: .63rem;
+            }
+        }
+
+        .mws-p-item {
+            grid-area: pItem;
+            @include mwsPItem
+        }
+
+
+    .mws-visible {
+        display: block;
+    }

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en" id="HTML">
+
+  <head>
+
+    <link rel="apple-touch-icon"href="/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon"            href="/assets/img/favicons/favicon-32x32.png" type="image/png" sizes="32x32" >
+    <link rel="icon"            href="/assets/img/favicons/favicon-16x16.png" type="image/png" sizes="16x16" >
+    <link rel="manifest"        href="/assets/img/favicons/manifest.json">
+    <link rel="mask-icon"       href="/assets/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta charset="UTF-8" content="width=device-width, initial-scale=1">
+    <title>WorkoutBuddy</title> 
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  </head>
+
+  <body>
+      <script type="text/javascript">
+          const pixelRatio  = Math.floor(1 / window.devicePixelRatio * 100);
+          document.getElementById('HTML').setAttribute('style', `font-size: ${pixelRatio}%`);
+      </script>
+
+        <div id="site-container">
+            <header id="header">
+                <div id="header-container">
+                    <div id="header-logo">
+                        <p id="header-logo-title"><img id="header-logo-image" src="assets/img/header-logo.svg" alt="Image logo"></p>
+                    </div>
+                    <nav id="header-navigation">
+                        <ul id="header-navigation-ul">
+                            <li class="header-navigation-elements" data-section="mainGallery">Exercises</li>
+                            <li class="header-navigation-elements" data-section="mainHome">Search</li>
+                            <li class="header-navigation-elements" data-section="mainAbout">About</li>
+                        </ul>
+                    </nav>
+                    <div id="header-search" data-active="false">
+                        <input id="header-search-input" type="text" spellcheck="false">
+                        <i id="header-search-logo"  class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </header>
+            <main id="main">
+                <section class="main-settings" id="main-home" data-active="true">
+                    <div id="main-home-search">
+                        <input id="mhs-input" type="text" placeholder="Search in the database"  spellcheck="false">
+                        <a id="mhs-search" class="mhs-icons-container" href="#"><span class="fa fa-search mhs-icons"></span></a>
+                    </div>
+                </section>
+                <section class="main-settings" id="main-wall" data-active="false">
+                    <div id="main-wall-search">
+                        <h4 id="mws-results">Search results for '<span id="mws-query"></span>'</h3>
+                        <!-- <span class="spanTag">Exercises<span id="mws-results-movies">0</span></span> -->
+                    </div>
+                    <div id="mws-movies" class="main-wall-group">
+                        <h3 class="mws-h3-header"><span class="fa fa-heartbeat"></span>Exercises</h3>
+                        <div id="mws-movies-container">
+                            <div class="mws-item">
+                                <h3 class="mws-h3-item">Terminator Genesis</h3>
+                                <h5 class="mws-h5-item"><span class="fa fa-calendar"></span>02/06/2012</h5>
+                                <p class="mws-p-item">Hamlet is Shakespeare's longest play, and is considered among the most powerful and influential works of world literature, with a story capable of "seemingly endless retelling and adaptation by others"Hamlet is Shakespeare's longest play, and is considered among the most powerful and influential works of world literature, with a story capable of "seemingly endless retelling and adaptation by others".[1] </p>
+                            </div>
+                            <div class="mws-item">
+                                <h3 class="mws-h3-item">Terminator Genesis</h3>
+                                <h5 class="mws-h5-item"><span class="fa fa-calendar"></span>02/06/2012</h5>
+                                <p class="mws-p-item">Hamlet is Shakespeare's longest play, and is considered among the most powerful and influential works of world literature, with a story capable of "seemingly endless retelling and adaptation by others"Hamlet is Shakespeare's longest play, and is considered among the most powerful and influential works of world literature, with a story capable of "seemingly endless retelling and adaptation by others".[1] </p>
+                            </div>
+                            <div class="mws-item">
+                                <h3 class="mws-h3-item">Terminator Genesis</h3>
+                                <h5 class="mws-h5-item"><span class="fa fa-calendar"></span>02/06/2012</h5>
+                                <p class="mws-p-item">Hamlet is Shakespeare's longest play, and is considered among the most powerful and influential works of world literature, with a story capable of "seemingly endless retelling and adaptation by others"Hamlet is Shakespeare's longest play, and is considered among the most powerful and influential works of world literature, with a story capable of "seemingly endless retelling and adaptation by others".[1] </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="mws-persons" class="main-wall-group">
+                        <h3 class="mws-h3-header"><span class="fa fa-user-o"></span>Persons</h3>
+                        <div id="mws-persons-container">
+                            <div class="mws-item">
+                                <h3 class="mws-h3-item">Terminator Genesis</h3>
+                                <h5 class="mws-h5-item"><span class="fa fa-fire"></span>02/06/2012</h5>
+                                <p class="mws-p-item">Hamlet is Shakespeare's longest play, and is considered among the most powerful and influential works of world literature, with a story capable of "seemingly endless retelling and adaptation by others"Hamlet is Shakespeare's longest play, and is considered among the most powerful and influential works of world literature, with a story capable of "seemingly endless retelling and adaptation by others".[1] </p>
+                            </div>
+                            <div class="mws-item">
+                                <h3 class="mws-h3-item">Terminator Genesis</h3>
+                                <h5 class="mws-h5-item"><span class="fa fa-fire"></span>02/06/2012</h5>
+                                <p class="mws-p-item">Hamlet is Shakespeare's longest play, and is considered among the most powerful and influential works of world literature, with a story capable of "seemingly endless retelling and adaptation by others"Hamlet is Shakespeare's longest play, and is considered among the most powerful and influential works of world literature, with a story capable of "seemingly endless retelling and adaptation by others".[1] </p>
+                            </div>
+                            <div class="mws-item">
+                                <h3 class="mws-h3-item">Terminator Genesis</h3>
+                                <h5 class="mws-h5-item"><span class="fa fa-fire"></span>02/06/2012</h5>
+                                <p class="mws-p-item">Hamlet is Shakespeare's longest play, and is considered among the most powerful and influential works of world literature, with a story capable of "seemingly endless retelling and adaptation by others"Hamlet is Shakespeare's longest play, and is considered among the most powerful and influential works of world literature, with a story capable of "seemingly endless retelling and adaptation by others".[1] </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main-settings" id="main-actors" data-active="false">
+                    <div id="main-actors-profile">
+                        <div id="mat-img-container">
+                            <img id="mat-img" class="lazy" src="" alt="">
+                        </div>
+                        <h2 id="mat-name"></h2>
+                    </div>
+                    <div id="main-actors-description">
+                        <h3 class="mad-biography"><span class="fa fa-address-card-o"></span>Biography</h4>
+                        <p id="mad-biography"> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                        <div class="mad-personel">
+                            <div class="mad-personel-text">
+                                <span><span class="fa fa-map-marker"></span>From</span>
+                                <span><span class="fa fa-birthday-cake"></span>Birthday</span>
+                            </div>
+                            <div class="mad-personel-content">
+                                <span id="mad-from">New York City, New York, USA</span>
+                                <span id="mad-birthday">12/06/1945</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="main-actors-filmography">
+                        <h3 class="mad-biography"><span class="fa fa-list-ul "></span>Filmography</h4>
+                        <ul id="mad-timeline"></ul>
+                    </div>
+                    <div id="main-actors-trademark">
+                        <h3 class="mad-biography"><span class="fa fa-trophy"></span>Trademarks</h4>
+                        <ul id="mat-container">
+                            <div class="mat-item">
+                                <img class="mat-item-img lazy" src="" alt="">
+                                <span class="mat-item-title"></span>
+                            </div>
+                            <div class="mat-item">
+                                <img class="mat-item-img lazy" src="" alt="">
+                                <span class="mat-item-title"></span>
+                            </div>
+                            <div class="mat-item">
+                                <img class="mat-item-img lazy" src="" alt="">
+                                <span class="mat-item-title"></span>
+                            </div>
+                            <div class="mat-item">
+                                <img class="mat-item-img lazy" src="" alt="">
+                                <span class="mat-item-title"></span>
+                            </div>
+                            <div class="mat-item">
+                                <img class="mat-item-img lazy" src="" alt="">
+                                <span class="mat-item-title"></span>
+                            </div>
+                            <div class="mat-item">
+                                <img class="mat-item-img lazy" src="" alt="">
+                                <span class="mat-item-title"></span>
+                            </div>
+                            <div class="mat-item">
+                                <img class="mat-item-img lazy" src="" alt="">
+                                <span class="mat-item-title"></span>
+                            </div>
+                            <div class="mat-item">
+                                <img class="mat-item-img lazy" src="" alt="">
+                                <span class="mat-item-title"></span>
+                            </div>
+                        </ul>
+                    </div>
+
+                </section>
+                <section class="main-settings" id="main-genre" data-active="false">
+                    <div class="main-genre-description">
+                        <h3 class="mgd-genre"><span class="fa fa-film"></span>Genre</h3>
+                    </div>
+                    <ul id="main-genre-container">
+                        <li data-id="28">   <div class="icon-genre-action"></div>       <span>Action</span></li>
+                        <li data-id="12">   <div class="icon-genre-adventure"></div>    <span>adventure</span></li>
+                        <li data-id="16">   <div class="icon-genre-animation"></div>    <span>animation</span></li>
+                        <li data-id="35">   <div class="icon-genre-comedy"></div>       <span>comedy</span></li>
+                        <li data-id="80">   <div class="icon-genre-crime"></div>        <span>crime</span></li>
+                        <li data-id="99">   <div class="icon-genre-documentary"></div>  <span>documentary</span></li>
+                        <li data-id="18">   <div class="icon-genre-drama"></div>        <span>drama</span></li>
+                        <li data-id="14">   <div class="icon-genre-fantasy"></div>      <span>fantasy</span></li>
+                        <li data-id="36">   <div class="icon-genre-history"></div>      <span>history</span></li>
+                        <li data-id="27">   <div class="icon-genre-horror"></div>       <span>horror</span></li>
+                        <li data-id="9648"> <div class="icon-genre-mystery"></div>      <span>mystery</span></li>
+                        <li data-id="10749"><div class="icon-genre-romance"></div>      <span>romance</span></li>
+                        <li data-id="878">  <div class="icon-genre-scifi"></div>        <span>Science-fiction</span></li>
+                        <li data-id="53" >  <div class="icon-genre-thriller"></div>     <span>thriller</span></li>
+                        <li data-id="10752"><div class="icon-genre-war"></div>          <span>war</span></li>
+                        <li data-id="37">   <div class="icon-genre-western"></div>      <span>western</span></li>
+                    </ul>
+                </section>
+                <section class="main-settings" id="main-gallery" data-active="false">
+                        <div id="mg-arranger-container" data-open="false">
+                            <div id="mg-filtering-container" class="mg-container">
+                                <h3 class="mg-header-xl"><span class="fa fa-filter"></span>FILTERING</h3>
+                                <ul id="mg-filtering">
+                                    <li id="mg-genre">
+                                        <h5 class="mg-header-m-upper">Genre</h5>
+                                        <ul id="mg-genre-container">
+                                            <li data-genre-id="28">
+                                              <input class="mg-checkbox" id="mg-genre-action" type="checkbox" value="action">
+                                              <label class="mg-checkbox-label" for="mg-genre-action">action</label>
+                                            </li>
+                                            <li data-genre-id="12">
+                                              <input class="mg-checkbox" id="mg-genre-adventure" type="checkbox" value="adventure">
+                                              <label class="mg-checkbox-label" for="mg-genre-adventure">adventure</label>
+                                            </li>
+                                            <li data-genre-id="16">
+                                              <input class="mg-checkbox" id="mg-genre-animation" type="checkbox" value="animation">
+                                              <label class="mg-checkbox-label" for="mg-genre-animation">animation</label>
+                                            </li>
+                                            <li data-genre-id="35">
+                                              <input class="mg-checkbox" id="mg-genre-comedy" type="checkbox" value="comedy">
+                                              <label class="mg-checkbox-label" for="mg-genre-comedy">comedy</label>
+                                            </li>
+                                            <li data-genre-id="80">
+                                              <input class="mg-checkbox" id="mg-genre-crime" type="checkbox" value="crime">
+                                              <label class="mg-checkbox-label" for="mg-genre-crime">crime</label>
+                                            </li>
+                                            <li data-genre-id="99">
+                                              <input class="mg-checkbox" id="mg-genre-documentary" type="checkbox" value="documentary">
+                                              <label class="mg-checkbox-label" for="mg-genre-documentary">documentary</label>
+                                            </li>
+                                            <li data-genre-id="18">
+                                              <input class="mg-checkbox" id="mg-genre-drama" type="checkbox" value="drama">
+                                              <label class="mg-checkbox-label" for="mg-genre-drama">drama</label>
+                                            </li>
+                                            <li data-genre-id="14">
+                                              <input class="mg-checkbox" id="mg-genre-fantasy" type="checkbox" value="fantasy">
+                                              <label class="mg-checkbox-label" for="mg-genre-fantasy">fantasy</label>
+                                            </li>
+                                            <li data-genre-id="36">
+                                              <input class="mg-checkbox" id="mg-genre-history" type="checkbox" value="history">
+                                              <label class="mg-checkbox-label" for="mg-genre-history">history</label>
+                                            </li>
+                                            <li data-genre-id="27">
+                                              <input class="mg-checkbox" id="mg-genre-horror" type="checkbox" value="horror">
+                                              <label class="mg-checkbox-label" for="mg-genre-horror">horror</label>
+                                            </li>
+                                            <li data-genre-id="9648">
+                                              <input class="mg-checkbox" id="mg-genre-mystery" type="checkbox" value="mystery">
+                                              <label class="mg-checkbox-label" for="mg-genre-mystery">mystery</label>
+                                            </li>
+                                            <li data-genre-id="10749">
+                                              <input class="mg-checkbox" id="mg-genre-romance" type="checkbox" value="romance">
+                                              <label class="mg-checkbox-label" for="mg-genre-romance">romance</label>
+                                            </li>
+                                            <li data-genre-id="878">
+                                              <input class="mg-checkbox" id="mg-genre-scifi" type="checkbox" value="scifi">
+                                              <label class="mg-checkbox-label" for="mg-genre-scifi">scifi</label>
+                                            </li>
+                                            <li data-genre-id="53">
+                                              <input class="mg-checkbox" id="mg-genre-thriller" type="checkbox" value="thriller">
+                                              <label class="mg-checkbox-label" for="mg-genre-thriller">thriller</label>
+                                            </li>
+                                            <li data-genre-id="10752">
+                                              <input class="mg-checkbox" id="mg-genre-war" type="checkbox" value="war">
+                                              <label class="mg-checkbox-label" for="mg-genre-war">war</label>
+                                            </li>
+                                            <li data-genre-id="37">
+                                              <input class="mg-checkbox" id="mg-genre-western" type="checkbox" value="western">
+                                              <label class="mg-checkbox-label" for="mg-genre-western">western</label>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li id="mg-year">
+                                        <h5 class="mg-header-m-upper">Year</h5>
+                                        <div class="mg-slider-container-vertical">
+                                            <div class="mg-slider-settings-vertical" id="mg-slider-year"></div>
+                                        </div>
+                                    </li>
+
+                                    <li id="mg-rating">
+                                        <h5 class="mg-header-m-upper">Rating</h5>
+                                        <div class="mg-slider-container">
+                                            <div class="mg-slider-settings" id="mg-slider-rating"></div>
+                                        </div>
+                                    </li>
+
+                                    <li id="mg-runtime">
+                                        <h5 class="mg-header-m-upper">Runtime</h5>
+                                        <div class="mg-slider-container">
+                                            <div class="mg-slider-settings" id="mg-slider-runtime"></div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div id="mg-sorting-container" class="mg-container">
+                                <h3 class="mg-header-xl"><span class="fa fa-sort-amount-asc"></span>SORTING</h3>
+                                <ul id="mg-sorting">
+                                    <li id="mg-sortby">
+                                        <h5 class="mg-header-m-upper">Sorting by</h5>
+                                        <div id="mg-radiobuttons">
+
+                                            <label class="mg-radio-label">Popularity
+                                                <input class="mg-radio-input" type="radio" name="radio" value="popularity" checked>
+                                                <span class="mg-checkmark"></span>
+                                            </label>
+
+                                            <label class="mg-radio-label">Title
+                                                <input class="mg-radio-input" type="radio" name="radio"  value="title">
+                                                <span class="mg-checkmark"></span>
+                                            </label>
+
+                                            <label class="mg-radio-label">Rating
+                                                <input class="mg-radio-input" type="radio" name="radio" value="rating" >
+                                                <span class="mg-checkmark"></span>
+                                            </label>
+
+                                            <label class="mg-radio-label">Year
+                                                <input class="mg-radio-input" type="radio" name="radio" value="year" >
+                                                <span class="mg-checkmark"></span>
+                                            </label>
+
+                                        </div>
+                                    </li>
+
+                                    <li id="mg-direction">
+                                        <h5 class="mg-header-m-upper">Sorting order</h5>
+                                        <div id="mg-order-container">
+                                            <div id="mg-order">
+                                                <input class="mg-sorting-order" type="radio" name="switch" value="highest" id="switch-off" checked>
+                                                <input class="mg-sorting-order" type="radio" name="switch" value="lowest" id="switch-on">
+
+                                                <label for="switch-off">Highest</label>
+                                                <label for="switch-on">Lowest</label>
+
+                                                <span class="toggle"></span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="mg-navigation-container">
+                                <div id="mg-refresh">Update</div>
+                                <i id="mg-toggle" class="fa fa-cog" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <ul id="mg-movie-container" tabindex="0"></ul>
+                </section>
+                <section class="main-settings" id="main-about" data-active="false">
+                    <div class="main-genre-description">
+                        <h3 class="mgd-genre"><span class="fa fa-bookmark-o"></span>About WorkoutBuddy</h3>
+                    </div>
+                    <div class="ma-content-container">
+                        <div class="ma-content">
+                            In general, technology is becoming faster and more available to the public. Not only that, but applications are getting more and more data-driven. All of this translates in the end to larger amounts of information.
+This proposes problems of overload of data for the end-user. To combat this problem, services have to optimize the data they show to each individual.
+
+As we saw in my last presentation, the amount of data obtained related to fitness is huge, however, it is not really put into use. In this part of the subject I try to apply the concepts I learnt before and tried to make a recommender system.
+                        </div>
+                        <img src="https://th.bing.com/th/id/R.570c1973f680081d756c0d67636f1005?rik=jh6Kl2dSCtKCHg&riu=http%3a%2f%2fwww.geelongaustralia.com.au%2fcommon%2fpublic%2fimages%2flrg%2f8d49ddfe3e38a19-BodyStep.jpg&ehk=eWzw3gkc%2f7ezIviCMNoB3oI17xvm582UVfuQ7aH%2fk20%3d&risl=&pid=ImgRaw&r=0" class="ma-content-tmdb" alt="">
+                    </div>
+
+                </section>
+            </main>
+            <div id="overlay">
+                <section id="overlay-movies" data-active="false">
+                    <div id="overlay-movies-container">
+                        <div id="om-poster" style="background-image: url('')">
+                            <div id="om-poster-outer">
+                                <div id="om-poster-inner" style="background-image: url('')">
+                                    Poster
+                                </div>
+                                <div id="om-poster-filter">
+                                    <i id="om-trailer-play" class="fa fa-youtube-play" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <ul  id="om-information">
+                            <li class="om-settings om-header-style0 om-header-xl">
+                                <p id="om-title"></p>
+                            </li>
+                            <ul class="om-settings om-header-style1">
+                                <li class="om-header-l" id="om-year"></li>
+                                <ul>
+                                    <li class="om-header-m-upper" id="om-duration"></li>
+                                    <li class="om-header-m-lower" >minutes</li>
+                                </ul>
+                                <ul>
+                                    <li class="om-header-m-upper" id="om-rating"></li>
+                                    <li class="om-header-m-lower" id="om-votes"></li>
+                                </ul>
+                            </ul>
+                            <ul class="om-settings om-header-style2">
+                                <ul>
+                                    <li class="om-header-s-upper">Director</li>
+                                    <li class="om-header-s-lower" id="om-director"></li>
+                                </ul>
+                                <ul>
+                                    <li class="om-header-s-upper">Genre</li>
+                                    <li class="om-header-s-lower" id="om-genre"></li>
+                                </ul>
+                            </ul>
+                            <ul class="om-settings om-header-style2">
+                                <ul>
+                                    <li class="om-header-s-upper">Writer</li>
+                                    <li class="om-header-s-lower" id="om-writer">Dean Devlin</li>
+                                </ul>
+                                <ul>
+                                    <li class="om-header-s-upper">Release date</li>
+                                    <li class="om-header-s-lower" id="om-releasedate">2017-10-13</li>
+                                </ul>
+                            </ul>
+                            <ul class="om-settings om-header-style3">
+                                <ul>
+                                    <li class="om-header-s-upper">Actors</li>
+                                    <li class="om-header-s-lower" id="om-actors"></li>
+                                </ul>
+                            </ul>
+                            <ul class="om-settings om-header-style3" id="om-header-description">
+                                <ul>
+                                    <li class="om-header-s-upper">Description</li>
+                                    <li class="om-header-s-lower" id="om-description"></li>
+                                </ul>
+                            </ul>
+                            <ul class="om-settings om-header-style4" id="om-actors-icon">
+                                <li class="om-header-actors" style="background-image: url('')"></li>
+                                <li class="om-header-actors" style="background-image: url('')"></li>
+                                <li class="om-header-actors" style="background-image: url('')"></li>
+                                <li class="om-header-actors" style="background-image: url('')"></li>
+                                <li class="om-header-actors" style="background-image: url('')"></li>
+                                <li class="om-header-actors" style="background-image: url('')"></li>
+                            </ul>
+                        </ul>
+                        <div id="om-trailer" data-open="false">
+                            <iframe id="om-trailer-iframe"
+                                src=""
+                                allowfullscreen>
+                            </iframe>
+
+                            <div id="om-trailer-exit">
+                                <span class="ote-tag">✕</span>
+                                <span class="ote-tag">CLOSE</span>
+                            </div>
+                        </div>
+                    </div>
+                    <span id="om-exit-overlay">✕</span>
+                </section>
+                <section id="overlay-background">
+                    <div id="overlay-img" >
+                    </div>
+                    <div id="overlay-color" data-home-active="true">
+                    </div>
+                </section>
+            </div>
+
+            <footer id="footer">
+                <div id="footer-keyboard">
+                    <div id="footer-key-38" class="fa fa-arrow-up footer-keys" aria-hidden="true"></div>
+                    <div id="footer-key-37" class="fa fa-arrow-left footer-keys" aria-hidden="true"></div>
+                    <div id="footer-key-40" class="fa fa-arrow-down footer-keys" aria-hidden="true"></div>
+                    <div id="footer-key-39" class="fa fa-arrow-right footer-keys" aria-hidden="true"></div>
+                </div>
+            </footer>
+
+        </div>
+
+        <script src="assets/js/vendors/nouislider.js"></script>
+        <script src="assets/js/vendors/wNumb.js"></script>
+
+        <script src="assets/js/main.js"></script>
+  </body>
+</html>

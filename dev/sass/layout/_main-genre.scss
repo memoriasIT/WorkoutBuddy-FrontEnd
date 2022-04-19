@@ -1,0 +1,69 @@
+// ==================== MAIN GENRE  ==================== \\
+
+
+    // MAIN GENRE SEARCH
+
+    .main-genre-description {
+
+        margin-top: 1.88rem;
+
+        .mgd-genre {
+            border-bottom: 1px solid $c-theme4;
+            padding-bottom: .63rem;
+            @include mgdGenre;
+
+            > span {
+                padding-right: .63rem;
+            }
+        }
+    }
+
+    #main-genre-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+
+        align-items: center;
+        align-self: center;
+
+        padding-top: 10vh;
+
+        > li {
+            justify-self: center;
+
+            background-color: rgba($c-g-2, 0.2);
+            border: 1px solid rgba($c-g-3, 0.8);
+            border-radius: .38rem;
+
+            width: 15rem;
+            height: 8.44rem;
+            margin: 1.25rem .94rem;
+
+            display: grid;
+            grid-template-rows: 1fr 0px;
+            justify-content: center;
+            align-items: center;
+
+            cursor: pointer;
+
+            transition: 0.5s;
+
+            > div {
+                margin: 0px auto;
+                color: $c-theme1;
+                font-size: 2.5rem;
+            }
+
+            > span {
+                @include mainGenre;
+
+                color: $c-theme1;
+                transform: translateY(-1.25rem);
+                text-align: center;
+            }
+        }
+
+        > li:hover {
+            background-color: rgba($c-g-2, 0.6) !important;
+        }
+    }

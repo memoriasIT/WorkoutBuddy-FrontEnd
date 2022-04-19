@@ -1,0 +1,339 @@
+/* ==================== TYPEGRAPHY FONTLOAD ==================== */
+
+
+
+@font-face {
+    font-family: 'MyriadProRegular';
+    src: url('../fonts/Myriad-Pro-Regular.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'RobotoLight';
+    src: url('../fonts/Roboto-Light.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'RobotoMedium';
+    src: url('../fonts/Roboto-Medium.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'RobotoBold';
+    src: url('../fonts/Roboto-Bold.ttf') format('truetype')
+}
+
+
+/* ==================== Mixins'S ==================== */
+
+// HEADER
+
+@mixin headerLogoTitle {
+    font-family: "RobotoBold";
+    font-size: 2rem;
+    color: $c-w-5;
+}
+
+@mixin headerNav {
+    font-family: "MyriadProRegular";
+    font-size: 1rem;
+    color: $c-theme1;
+    text-transform: uppercase;
+}
+
+
+@mixin headerSearch {
+    font-family: "RobotoLight";
+    font-size: 0.9rem;
+    color: $c-w-5;
+}
+
+@mixin headerMgRefresh {
+    font-family: "RobotoLight";
+    font-size: 0.75rem;
+    color: $c-w-5;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+// MAIN - HOME
+
+@mixin mainInput {
+    font-family: "RobotoLight";
+    font-size: 3.5rem;
+}
+
+
+@mixin robotoLight {
+    font-family: "RobotoLight";
+    font-size: .88rem;
+}
+
+@mixin robotoBold {
+    font-family: "RobotoBold";
+    font-size: 1.25rem;
+}
+
+// MAIN - WALL
+
+@mixin mwsResults {
+    font-family: "RobotoLight";
+    font-size: 1.13rem;
+    font-weight: 100;
+}
+
+@mixin mwsResultsClass {
+    font-family: "RobotoLight";
+    font-size: .88rem;
+    font-weight: 400;
+    color: $c-w-5;
+}
+
+    @mixin mwsResultsSpan {
+        font-family: "RobotoBold";
+        font-size: .88rem;
+        margin-left: .63rem;
+        font-weight: 700;
+        color: $c-w-5;
+    }
+
+
+@mixin mwsH3Header {
+    font-family: "MyriadProRegular";
+    font-size: 1.4rem;
+    color: $c-theme2;
+}
+
+    @mixin mwsH3Item {
+        font-family: "RobotoLight";
+        font-size: 1rem;
+        color: $c-theme2;
+    }
+
+    @mixin mwsH5Item {
+        font-family: "RobotoLight";
+        font-size: .75rem;
+        color: $c-b-5;
+        font-weight: 100;
+    }
+
+    @mixin mwsPItem {
+        font-family: "RobotoLight";
+        font-size: .75rem;
+        color: $c-b-4;
+    }
+
+
+// MAIN - ACTORS
+
+    @mixin matName {
+        font-family: "RobotoBold";
+        font-size: 1rem;
+        color: $c-w-5;
+    }
+
+    @mixin mapPersonel {
+        font-family: "RobotoBold";
+        font-size: .88rem;
+        color: $c-theme2;
+    }
+
+    @mixin mapPersonelContent {
+        font-family: "RobotoLight";
+        font-size: .75rem;
+        color: $c-b-4;
+    }
+
+    @mixin madContent {
+        font-family: "RobotoBold";
+        font-size: .88rem;
+        color: $c-theme2;
+    }
+
+    @mixin matItem {
+        font-family: "RobotoBold";
+        font-size: .88rem;
+        color: $c-theme2;
+    }
+
+
+// MAIN - ABOUT
+
+    @mixin maAbout {
+        font-family: "MyriadProRegular";
+        font-size: 1rem;
+        color: $c-theme2;
+        line-height: 1.5rem;
+    }
+
+
+// MAIN - GENRE
+
+    @mixin mgdGenre {
+        font-family: "MyriadProRegular";
+        font-size: 1.38rem;
+        color: $c-theme2;
+    }
+
+    @mixin mgdText {
+
+    }
+
+
+    @mixin mainGenre {
+        font-family: "MyriadProRegular";
+        font-size: .88rem;
+        color: $c-theme2;
+        text-transform: capitalize;
+    }
+
+
+// MAIN - GALLERY
+
+    @mixin mgMovieTitle {
+        font-family: "RobotoBold";
+        font-size: 0.85rem;
+        color: $c-theme2;
+        font-weight: 400;
+    }
+
+    @mixin mgMovieYear {
+        font-family: "RobotoLight";
+        font-size: 0.85rem;
+        color: $c-b-5;
+        font-weight: 400;
+    }
+
+    @mixin mgHeaderMUpper {
+        font-family: "RobotoBold";
+        font-size: 0.6rem;
+        color: $c-theme2;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    @mixin mgHeaderMLower {
+        font-family: "RobotoMedium";
+        font-size: .63rem;
+        color: $c-theme2;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    @mixin mgHeaderS {
+        font-family: "MyriadProRegular";
+        font-size: .6rem;
+        color: $c-theme2;
+    }
+
+    @mixin oteTag {
+        font-family: "RobotoLight";
+        font-size: 1rem;
+        color: rgba($c-w-5, 0.5);
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+
+
+// MAIN - DISCOVER
+
+
+
+
+
+
+// OVERLAY - GALLERY
+
+    @mixin omHeaderXL {
+        font-family: "RobotoLight";
+        font-size: 1.5rem;
+        color: $c-w-5;
+        text-transform: uppercase;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-weight: 700;
+    }
+
+    @mixin omHeaderL {
+        font-family: "RobotoBold";
+        font-size: 1.4rem;
+        color: $c-w-5;
+    }
+
+    @mixin omHeaderMUpper {
+        font-family: "RobotoBold";
+        font-size: 1.1rem;
+        color: $c-w-5;
+        font-weight: 700;
+    }
+
+    @mixin omHeaderMLower {
+        font-family: "RobotoLight";
+        font-size: 0.8rem;
+        color: $c-w-5;
+    }
+
+
+    @mixin omHeaderSUpper {
+        font-family: "RobotoBold";
+        font-size: 0.9rem;
+        padding-bottom: .25rem;
+        color: $c-theme5;
+    }
+
+    @mixin omHeaderSLower {
+        font-family: "RobotoLight";
+        font-size: 0.9rem;
+        color: $c-w-5;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Icon glyph*/
+    @font-face {
+        font-family: 'iconsprite';
+        src: url('../fonts/iconsprite/iconsprite.eot');
+        src: url('../fonts/iconsprite/iconsprite.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/iconsprite/iconsprite.woff') format('woff'),
+             url('../fonts/iconsprite/iconsprite.ttf') format('truetype'),
+             url('../fonts/iconsprite/iconsprite.svg#iconsprite') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    [class*='icon-']:before{
+        display: inline-block;
+       font-family: 'iconsprite';
+       font-style: normal;
+       font-weight: normal;
+       line-height: 1;
+       -webkit-font-smoothing: antialiased;
+       -moz-osx-font-smoothing: grayscale
+    }
+    .icon-genre-horror:before{content:'\0041';}
+    .icon-genre-musical:before{content:'\0042';}
+    .icon-genre-mystery:before{content:'\0043';}
+    .icon-genre-romance:before{content:'\0044';}
+    .icon-genre-scifi:before{content:'\0045';}
+    .icon-genre-thriller:before{content:'\0046';}
+    .icon-genre-war:before{content:'\0047';}
+    .icon-genre-western:before{content:'\0048';}
+    .icon-genre-action:before{content:'\0049';}
+    .icon-genre-adventure:before{content:'\004a';}
+    .icon-genre-animation:before{content:'\004b';}
+    .icon-genre-comedy:before{content:'\004c';}
+    .icon-genre-crime:before{content:'\004d';}
+    .icon-genre-documentary:before{content:'\004e';}
+    .icon-genre-drama:before{content:'\004f';}
+    .icon-genre-family:before{content:'\0050';}
+    .icon-genre-fantasy:before{content:'\0051';}
+    .icon-genre-history:before{content:'\0052';}
